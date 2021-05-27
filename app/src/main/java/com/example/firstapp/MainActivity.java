@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        button.setOnClickListener(v -> {
+            if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()){
+                result.setText("Правильно!");
+            } else {
+                result.setText("Не верно! Желтый + Красный");
+            }
+        });
     }
 }
