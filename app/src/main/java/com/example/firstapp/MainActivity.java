@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(v -> {
             if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()){
-                result.setText("Правильно!");
+                result.setText(R.string.correct_result);
             } else {
-                result.setText("Не верно! Желтый + Красный");
+                result.setText(R.string.incorrect_result);
             }
         });
     }

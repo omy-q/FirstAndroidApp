@@ -9,7 +9,8 @@
     <string name="yellow">Желтый</string>
 
     <string name="check">Проверить</string>
-    <string name="result"></string>
+    <string name="correct_result">Правильно!</string>
+    <string name="incorrect_result">Не верно! Желтый + Красный</string>
 
     <string name="input_user_text">Введите текст</string>
     <string name="off">выкл. темную тему</string>
@@ -18,4 +19,6 @@
     <string name="magic">Добавить магии</string>
 
     <string name="comment">Оцени приложение от 1 до 5</string>
+
+
 </resources>
