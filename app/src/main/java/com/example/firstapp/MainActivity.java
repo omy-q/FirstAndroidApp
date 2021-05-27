@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -26,21 +28,38 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox2 = findViewById(R.id.red);
         CheckBox checkBox3 = findViewById(R.id.blue);
         TextView result = findViewById(R.id.result);
+        Switch switch_magic = findViewById(R.id.magic);
 
-        toggleButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked) {
-                linearLayout.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.black_theme, null));
+        CompoundButton.OnCheckedChangeListener listener = (buttonView, isChecked) -> {
+            if (switch_magic.isChecked()) {
+                if (toggleButton.isChecked()) {
+                    linearLayout.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.linearlayout_background_black, null));
+                } else {
+                    linearLayout.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.linearlayout_background_light, null));
+                }
             } else {
-                linearLayout.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.white_theme, null));
+                if (toggleButton.isChecked()) {
+                    linearLayout.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.black_theme, null));
+                } else {
+                    linearLayout.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.white_theme, null));
+                }
             }
-        });
+        };
+
+        switch_magic.setOnCheckedChangeListener(listener);
+        toggleButton.setOnCheckedChangeListener(listener);
 
         button.setOnClickListener(v -> {
-            if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()){
+            if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()) {
                 result.setText(R.string.correct_result);
             } else {
                 result.setText(R.string.incorrect_result);
             }
         });
+
+
+
+
+
     }
 }
