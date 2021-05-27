@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">FirstApp</string>
+    <string name="app_name">Testing</string>
+    <string name="helloFriend">Привет, друг!</string>
+
+    <string name="question">Как получить оранжевый цвет?</string>
+
+    <string name="red">Красный</string>
+    <string name="blue">Синий</string>
+    <string name="yellow">Желтый</string>
+
+    <string name="check">Проверить</string>
+    <string name="result"></string>
+
+    <string name="input_user_text">Введите текст</string>
+    <string name="off">выкл. темную тему</string>
+    <string name="on">вкл. темную тему</string>
+
+    <string name="magic">Добавить магии</string>
+
+    <string name="comment">Оцени приложение от 1 до 5</string>
 </resources>
