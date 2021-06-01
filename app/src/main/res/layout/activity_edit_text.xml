@@ -107,11 +107,10 @@
                 android:textColor="@color/text"
                 android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/birthday_text"
-                android:layout_width="250dp"
+            <CalendarView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="date" />
+                android:clickable="true" />
 
         </LinearLayout>
 
