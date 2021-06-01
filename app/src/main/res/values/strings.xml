@@ -20,5 +20,25 @@
 
     <string name="comment">Оцени приложение</string>
 
+    <string name="registration">Регистрация</string>
+
+    <string name="person_data">Личные данные</string>
+
+    <string name="surname">Фамилия: </string>
+    <string name="name">Имя: </string>
+    <string name="patronymic">Отчество: </string>
+    <string name="date_birthday">Дата рождения: </string>
+    <string name="phone">Номер телефона: </string>
+
+    <string name="safety">Безопасность</string>
+
+    <string name="email">Email: </string>
+    <string name="login">Login/Email: </string>
+    <string name="password">Password: </string>
+
+    <string name="questions">Информация о себе</string>
+
+    <string name="question1">Любимое число: </string>
+
 
 </resources>

@@ -17,4 +17,8 @@
     <color name="text">#0692D3</color>
     <color name="black_theme">#232323</color>
     <color name="white_theme">#D7D7F3</color>
+
+    <color name="heading">#0000DC</color>
+    <color name="heading_2level">#0452DA</color>
+
 </resources>
