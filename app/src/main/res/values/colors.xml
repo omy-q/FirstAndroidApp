@@ -21,4 +21,7 @@
     <color name="heading">#0000DC</color>
     <color name="heading_2level">#0452DA</color>
 
+    <color name="gradient_1">#CAF1EF</color>
+    <color name="gradient_2">#00D471</color>
+
 </resources>
