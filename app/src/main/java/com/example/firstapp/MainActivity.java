@@ -3,6 +3,7 @@ package com.example.firstapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox3 = findViewById(R.id.blue);
         TextView result = findViewById(R.id.result);
         Switch switch_magic = findViewById(R.id.magic);
+        Button reg = findViewById(R.id.reg);
 
         CompoundButton.OnCheckedChangeListener listener = (buttonView, isChecked) -> {
             if (switch_magic.isChecked()) {
@@ -56,6 +58,17 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(R.string.incorrect_result);
             }
         });
+
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
 
 
 
