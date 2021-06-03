@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">FirstApp</string>
+    <string name="app_name">Testing</string>
+    <string name="helloFriend">Привет, друг!</string>
+
+    <string name="question">Как получить оранжевый цвет?</string>
+
+    <string name="red">Красный</string>
+    <string name="blue">Синий</string>
+    <string name="yellow">Желтый</string>
+
+    <string name="check">Проверить</string>
+    <string name="correct_result">Правильно!</string>
+    <string name="incorrect_result">Не верно! Желтый + Красный</string>
+
+    <string name="input_user_text">Введите текст</string>
+    <string name="off">вкл. темную тему</string>
+    <string name="on">выкл. темную тему</string>
+
+    <string name="magic">Добавить магии</string>
+
+    <string name="comment">Оцени приложение</string>
+
+    <string name="registration">Регистрация</string>
+
+    <string name="person_data">Личные данные</string>
+
+    <string name="surname">Фамилия: </string>
+    <string name="name">Имя: </string>
+    <string name="patronymic">Отчество: </string>
+    <string name="date_birthday">Дата рождения: </string>
+    <string name="phone">Номер телефона: </string>
+
+    <string name="safety">Безопасность</string>
+
+    <string name="email">Email: </string>
+    <string name="login">Login/Email: </string>
+    <string name="password">Password: </string>
+
+    <string name="questions">Информация о себе</string>
+
+    <string name="question1">Любимое число: </string>
+
+
 </resources>
